@@ -1,0 +1,225 @@
+.journal {
+    width:300px;
+    border-radius: 4px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:black;
+    margin:6px;
+    display:inline-block;
+    vertical-align: bottom;
+}
+
+.journalimage {
+    /*background-image: set in html*/
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.2);
+    background-size: cover;
+}
+
+.journalnoimage {
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.2);
+}
+
+.journal .icons {
+    text-align:center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    
+    background-color: rgba(255,255,255,0.9);
+    
+    margin:auto;
+    margin-top:10px;
+    padding-top:5px;
+    height:45px;
+    width:180px;
+}
+
+.journal .icons .icon {
+    padding:5px;
+    transition: background-color .3s;
+    border-radius:3px;
+}
+
+.journal .icons .icon:hover {
+    background-color:yellow;
+}
+
+
+.journal .icons .description {
+    font-size:70%;
+}
+
+.journal .icons .icon:nth-of-type(1)~.description:nth-of-type(1), 
+.journal .icons .icon:nth-of-type(2)~.description:nth-of-type(2),
+.journal .icons .icon:nth-of-type(3)~.description:nth-of-type(3),
+.journal .icons .icon:nth-of-type(4)~.description:nth-of-type(4),
+.journal .icons .icon:nth-of-type(5)~.description:nth-of-type(5),
+.journal .icons .icon:nth-of-type(6)~.description:nth-of-type(6)  {
+    display:none;
+
+} 
+
+.journal .icons .icon:hover:nth-of-type(1)~.description:nth-of-type(1), 
+.journal .icons .icon:hover:nth-of-type(2)~.description:nth-of-type(2),
+.journal .icons .icon:hover:nth-of-type(3)~.description:nth-of-type(3),
+.journal .icons .icon:hover:nth-of-type(4)~.description:nth-of-type(4),
+.journal .icons .icon:hover:nth-of-type(5)~.description:nth-of-type(5),
+.journal .icons .icon:hover:nth-of-type(6)~.description:nth-of-type(6) {
+    display:block;
+
+} 
+
+.journal .sourceicons {
+    float:right;
+    position:relative;
+    bottom:16px;
+    right:16px;
+}
+
+.journal .sourceicons .greyscale {
+    opacity:0.1;
+    /* from http://stackoverflow.com/questions/609273/convert-an-image-to-grayscale-in-html-css */
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+.journal .sourceicons img {
+    width:16px;
+    height:16px;
+    border-radius:2px;
+}
+
+.journal .infobox {
+    height:200px;    
+}
+
+.journalimage .infobox, .journalimage .searchscore  {
+    width:100%;
+    background-color:rgba(255,255,255,0.9);
+}
+
+.journal .searchscore {
+    float: left;
+    font-size: 70%;
+    margin-top:-1px;
+    margin-left:-1px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.journal .subjects {
+    margin-top:10px;
+    text-align:center;
+    width:100%;
+}
+
+.journal .subject {
+    display:inline-block;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    margin-bottom:1px;
+    padding: 0 3 0 3;
+    
+    font-size:70%;
+}
+
+.journal .publisher, .journal .firstPublished, .journal .discipline, .journal .journaldescription {
+    display:inline-block;
+    
+    width:100%;
+    font-size: 70%;
+    text-align:center;   
+}
+.journal .journaldescription {
+    text-align: justify;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 260px;
+    padding: 20px;
+}
+.journal .publisher .country {
+    display: inline;
+    display: inline-block;
+    padding: 3px;
+}
+.journal .name {
+    text-align:center;
+    margin-top: 40px;
+    font-size:larger;
+    margin-bottom:5px;
+}
+
+.journal .issn {
+    text-align:center;
+    font-size:70%;
+    
+    width:90px;
+    
+    margin:auto;
+    margin-bottom: 5px;
+    
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:lightgrey;
+    border-style: solid;
+}
+
+.journal .rankingbox {
+    display: table-cell;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.ranking {
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-left-style:none;
+    border-color: lightgrey;
+    padding: 0 5 0 30;
+    margin-top:3px;
+    
+    font-size:70%;
+}
+
+.journal .rankingbox .description {
+    display:none;
+    height:0px;
+} 
+
+.journal .rankingbox .ranking:hover~.description {
+    display:block;
+    height:auto;
+    
+}
+
+/*.journal .rankingbox .ranking:hover:nth-of-type(1)~.description:nth-of-type(1), 
+.journal .rankingbox .ranking:hover:nth-of-type(2)~.description:nth-of-type(2),
+.journal .rankingbox .ranking:hover:nth-of-type(3)~.description:nth-of-type(3) {
+    display:block;
+    height:auto;
+} */
+
+.rank-0 {
+    background-color: #FFB15C; /*#FF5600;*/
+}
+
+.rank-1 {
+    background-color: #FFF18B; /*#FFE100;*/
+}
+
+.rank-2 {
+    background-color: #E2FC93; /*#B7F200;*/
+}
+
+.rank-3 {
+    background-color: #BFFF9B; /*#00C518;*/
+}

@@ -1,0 +1,4 @@
+cherrypy
+httplib2
+python-ldap
+lxml

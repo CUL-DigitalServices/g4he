@@ -1,0 +1,21 @@
+=========================
+INSTALLATION INSTRUCTIONS
+=========================
+
+1) Ensure system requirements are met (see below)
+2) git clone https://github.com/CUL-DigitalServices/g4he.git
+
+------------
+Requirements
+------------
+
+git is required to checkout the repository
+Python 2.7 is recommended 
+pip is recommended to manage python packages
+
+Some Python dependencies may also require other system dependencies,
+
+Python dependencies can be automatically installed by "pip":
+
+$ pip install -r requirements.txt
+
