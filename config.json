@@ -1,0 +1,18 @@
+{
+    "global": {
+        "environment": "production",
+        "log.screen": true
+    },
+    "/static":{
+        "tools.staticdir.on" : true,
+        "tools.staticdir.dir" : "static"
+    },
+    "codespecific":{
+        "keys":{
+            "ULRICHS_KEY":"",
+            "orgcode":"",
+            "orgname":""
+        }
+    }
+    
+}
